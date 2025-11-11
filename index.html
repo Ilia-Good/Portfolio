@@ -6,36 +6,74 @@
   <title>Portfolio</title>
 </head>
 <style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 40px;
-    background-color: #f4f4f4;
-    text-align: center;
-  }
+
   h1 {
+    text-align: center;
     color: #333;
   }
-  ul {
-    list-style-type: none;
-    padding: 0;
+  .project-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px auto;
+    max-width: 400px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
   }
-  li {
-    margin: 10px 0;
+  .project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
   }
-  a {
+  .project-card h3 {
+    margin-top: 10px;
+    color: #555;
+  }
+  .project-card p {
+    color: #777;
+  }
+  .project-card a {
+    position: relative;
+    z-index: 1; /* карточки будут спереди */
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: #fff;
     text-decoration: none;
-    color: #007BFF;
+    border-radius: 5px;
   }
-  a:hover {
-    text-decoration: underline;
+
+  .project-card a:hover {
+    background-color: #218838;
   }
+
+  .coming-soon {
+    text-align: center;
+    margin: 30px auto;
+    font-size: 1.2em;
+    color: #888;
+  }
+
 </style>
 <body>
   <h1>Мои проекты</h1>
-  <ul>
-    <li><a href="https://ilia-good.github.io/Goods" target="_blank">Goods — лендинг и визитка</a></li>
-    <li><a href="https://ilia-good.github.io/Portfolio/Junior%20Frontend%20Developer" target="_blank">Junior Frontend Developer — описание проекта</a></li>
-  </ul>
+  <div class="project-card">
+  <img src="https://cdn-edge.kwork.ru/files/portfolio/t0/05/f90052745e9430621395c0bba621940abdcadaa8-1762878505.webp" alt="Goods">
+  <h3>Goods</h3>
+  <p>Лендинг и сайт-визитка</p>
+  <a href="https://ilia-good.github.io/Goods" target="_blank">Посмотреть</a>
+</div>
+<div class="project-card">
+  <img src="https://cdn-edge.kwork.ru/files/portfolio/t0/57/d2b063db9db6bfe1b493cbb9f1527ed3bfc50d87-1762878257.webp" alt="Junior Frontend Developer">
+  <h3>Junior Frontend Developer</h3>
+  <p>Описание проекта</p>
+  <a href="https://ilia-good.github.io/Portfolio/Junior%20Frontend%20Developer" target="_blank">Посмотреть</a>
+</div>
+<div class="coming-soon">
+  <p>Продолжение следует…</p>
+</div>
 
 </body>
 </html>
