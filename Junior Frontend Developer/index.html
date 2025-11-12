@@ -167,28 +167,67 @@
   }
 
 /* 📱 Адаптация под телефоны */
-@media (max-width: 600px) {
-  body {
+@media (max-width: 768px) {
+  .navbar {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    height: auto;
     padding: 10px;
   }
-  .project-card {
-    max-width: 90%;
-    margin: 10px 0;
-  }
-  h1 {
-    font-size: 0.5rem;
-    text-align: center;
-  }
-  .footer {
-    font-size: 0.8rem;
-  }
+
   .navbar-btn {
-    font-size: 0.5rem;
-    margin-left: 10px;
+    display: block;
+    margin: 8px 0;
+    font-size: 0.9rem;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .about-card, .projects-card, .contact-card {
+    width: 90%;
+    margin: 10px auto;
+    padding: 20px;
+    font-size: 1rem;
+  }
+
+  h1.new-section {
+    font-size: 1.6rem;
   }
 }
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px;
+  }
+
+  .navbar-btn {
+    display: block;
+    margin: 8px 0;
+    font-size: 0.9rem;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .about-card, .projects-card, .contact-card {
+    width: 90%;
+    margin: 10px auto;
+    padding: 20px;
+    font-size: 1rem;
+  }
+
+  h1.new-section {
+    font-size: 1.6rem;
+  }
+}
+
 
 </style>
 <body>
