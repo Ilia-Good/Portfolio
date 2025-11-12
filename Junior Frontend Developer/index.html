@@ -46,9 +46,9 @@
 
   .navbar-brand {
     color: #ffff;
-      font-weight: bold;
-      text-decoration: none;
-      font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
   }
 
   .navbar-btn {
@@ -150,17 +150,18 @@
 
   #copy-msg {
     position: absolute;
-    left: 100%;
-    top: 0;
-    background-color: rgba(0,0,0,0.8);
+    bottom: 100%; /* всплывает над кнопкой */
+    left: 50%;
+    transform: translateX(-50%) translateY(-8px); /* центрирует и немного поднимает */
+    background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
     padding: 4px 10px;
     border-radius: 8px;
     font-size: 14px;
     opacity: 0;
-    transform: translateX(10px);
     transition: opacity 0.3s, transform 0.3s;
     white-space: nowrap;
+    pointer-events: none; /* чтобы не мешал кликам */
   }
 
 
@@ -172,14 +173,15 @@
 /* 📱 Адаптация под телефоны */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
     height: auto;
     padding: 10px;
   }
 
   .navbar-btn {
-    display: block;
+    margin: 5px 10px 0 0; /* чуть меньше, чтобы помещались */
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 14px;
     margin: 8px 0;
     font-size: 0.9rem;
   }
