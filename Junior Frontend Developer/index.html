@@ -166,10 +166,34 @@
     transform: translateX(0);
   }
 
+/* 📱 Адаптация под телефоны */
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .project-card {
+    max-width: 90%;
+    margin: 10px 0;
+  }
+  h1 {
+    font-size: 0.5rem;
+    text-align: center;
+  }
+  .footer {
+    font-size: 0.8rem;
+  }
+  .navbar-btn {
+    font-size: 0.5rem;
+    margin-left: 10px;
+  }
+}
+
 </style>
 <body>
   <nav class="navbar">
-      <a class="navbar-brand" href="#">🧑🏻‍💻 Junior Frontend Developer</a>
+      <a class="navbar-brand" href="#">🧑🏻‍💻 JFD</a>
       <div>
         <a class="navbar-btn" href="#about">Обо мне</a>
         <a class="navbar-btn" href="#projects">Мои проекты</a>
@@ -181,7 +205,9 @@
       <div class="about-card">
           <li><p class="about-first">ℹ️ Обо мне:</p>Привет! Меня зовут Иван, я фронтенд разработчик. 
             Я увлечен созданием красивых и функциональных веб-приложений. 
-            В свободное время я обучаю новым технологиям своих учеников, и работаю над своими проектами.</li>
+            В свободное время я обучаю новым технологиям своих учеников, и работаю над своими проектами.
+          </li>
+          <li><p class="about-first">🏷️основатель компании:</p>&copy; Junior Frontend Developer</li>
           <li><p class="about-first">🪪 Навыки:</p> HTML, CSS, JavaScript, React, Git</li>
           <li><p class="about-first"> 🏅Опыт:</p> 1 год коммерческой разработки</li>
     </div>
