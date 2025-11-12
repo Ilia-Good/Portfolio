@@ -12,6 +12,7 @@
   }
 
   html, body {
+    overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-padding-top: 80px; /* чтобы контент не прятался за navbar */
     height: 100%;
@@ -149,7 +150,7 @@
 
   #copy-msg {
     position: absolute;
-    left: 120%;
+    left: 100%;
     top: 0;
     background-color: rgba(0,0,0,0.8);
     color: #fff;
@@ -157,9 +158,11 @@
     border-radius: 8px;
     font-size: 14px;
     opacity: 0;
-    transform: translateX(-10px);
+    transform: translateX(10px);
     transition: opacity 0.3s, transform 0.3s;
+    white-space: nowrap;
   }
+
 
   #copy-msg.show {
     opacity: 1;
@@ -193,41 +196,19 @@
     font-size: 1rem;
   }
 
-  h1.new-section {
+  .new-section {
     font-size: 1.6rem;
   }
-}
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    height: auto;
-    padding: 10px;
-  }
-
-  .navbar-btn {
-    display: block;
-    margin: 8px 0;
-    font-size: 0.9rem;
-  }
-
-  .projects-container {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .about-card, .projects-card, .contact-card {
-    width: 90%;
-    margin: 10px auto;
-    padding: 20px;
-    font-size: 1rem;
-  }
-
-  h1.new-section {
-    font-size: 1.6rem;
-  }
+  .about-card,
+.projects-card,
+.contact-card {
+  width: calc(100% - 40px); /* с учётом отступов */
+  max-width: 100%;
+  margin: 10px auto;
+  padding: 20px;
 }
 
+}
 
 </style>
 <body>
