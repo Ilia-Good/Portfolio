@@ -55,18 +55,39 @@
     font-size: 1.2em;
     color: #888;
   }
+  
+  /* 📱 Адаптация под телефоны */
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .project-card {
+    max-width: 90%;
+    margin: 10px 0;
+  }
+  .project-card img {
+    width: 100%;
+    height: auto;
+  }
+  h1 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
 
 </style>
 <body>
   <h1>Мои проекты</h1>
   <div class="project-card">
-  <img src="https://cdn-edge.kwork.ru/files/portfolio/t0/05/f90052745e9430621395c0bba621940abdcadaa8-1762878505.webp" alt="Goods">
+  <img src="https://cdn-edge.kwork.ru/files/portfolio/t0/52/b4675e3bda3cb0fafcf06925a533a81af9afb805-1762970552.webp" alt="Goods">
   <h3>Goods</h3>
   <p>Лендинг и сайт-визитка</p>
   <a href="https://ilia-good.github.io/Goods" target="_blank">Посмотреть</a>
 </div>
 <div class="project-card">
-  <img src="https://cdn-edge.kwork.ru/files/portfolio/t0/57/d2b063db9db6bfe1b493cbb9f1527ed3bfc50d87-1762878257.webp" alt="Junior Frontend Developer">
+  <img src="https://cdn-edge.kwork.ru/files/portfolio/t0/48/130f278c695a2bd41c13f73f9fa9f7b4477299c5-1762970748.webp" alt="Junior Frontend Developer">
   <h3>Junior Frontend Developer</h3>
   <p>Описание проекта</p>
   <a href="https://ilia-good.github.io/Portfolio/Junior%20Frontend%20Developer" target="_blank">Посмотреть</a>
